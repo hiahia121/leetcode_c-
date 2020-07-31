@@ -4,6 +4,7 @@
 #include "FindNumIn2DArray.h"
 #include "ReplaceSpace.h"
 #include "ReversePrint.h"
+#include "Fib.h"
 
 using namespace std;
 
@@ -31,18 +32,21 @@ int main() {
 //    cout << rs.replaceSpace(rep_str);
 
 // leetcode06
-    ListNode head = ListNode(1);
-    ListNode a = ListNode(2);
-    ListNode b = ListNode(3);
-    head.next = &a;
-    a.next = &b;
-    b.next = nullptr;
-    ReversePrint rp;
-    vector<int> res = rp.reversePrint(&head, 1);
-    for(auto &i: res){
-        cout << i << endl;
-    }
+//    ListNode head = ListNode(1);
+//    ListNode a = ListNode(2);
+//    ListNode b = ListNode(3);
+//    head.next = &a;
+//    a.next = &b;
+//    b.next = nullptr;
+//    ReversePrint rp;
+//    vector<int> res = rp.reversePrint(&head, 1);
+//    for(auto &i: res){
+//        cout << i << endl;
+//    }
 
+// leetcode10
+    Fib f;
+    cout << f.fib(8);
 
     return 0;
 }
